@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RuokalistaJson.iml" filepath="$PROJECT_DIR$/RuokalistaJson.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RuokalistaProj.iml" filepath="$PROJECT_DIR$/RuokalistaProj.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -116,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
                         if(c.getString("LunchTime").equals("Kotkanpoika kello:  10.15 - 13.00 Kultturelli kello: 10.30 - 16.00")){
                             JSONObject f = menusForDays.getJSONObject(0);
                             f.put("Date", "Tänään");
+
+
                         }
                         // Tomorrow
                         if(c.getString("LunchTime").equals("Kotkanpoika kello:  10.15 - 13.00 Kultturelli kello: 10.30 - 16.00")){
@@ -134,9 +136,11 @@ public class MainActivity extends AppCompatActivity {
                         }
                         if(c.getString("LunchTime").equals("Kotkanpoika kello:  10.15 - 13.00 Kultturelli kello: 10.30 - 16.00") || c.getString("LunchTime").equals("Kotkanpoika kello:  10.15 - 13.00 Kultturelli kello: 10.30 - 14.00")){
                             JSONObject f = menusForDays.getJSONObject(2);
-                            //f.getString(TAG_DATE.replaceAll("T", "jotain"));
+                            f.getString(TAG_DATE.replace("\"2016\"", "\"TESTI\""));
                             //f.remove(TAG_DATE.replaceAll("T", "jotain"));
                             //f.put("Date", TAG_DATE.replaceAll("T", "jotain"));
+                            //f.getString(TAG_DATE.replace("\\T", "1"));
+                            //f.getString(TAG_DATE.replaceAll("(\\s*?\"id\"\\s*?:\\s*?)\"2016-11-23T00:00:00+01:00\",", "$1\"HELLO\""));
                         }
 
                         String date = c.getString(TAG_DATE);
